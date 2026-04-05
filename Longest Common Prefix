@@ -6,8 +6,8 @@ Output: "fl" */
 class Solution {
 public:
     string longestCommonPrefix(vector<string>& strs) {
-       if(strs.empty()) return "";
-       string prefix=strs[0];
+       if(strs.empty()) return "";   //if the array is empty return nothing
+       string prefix=strs[0];        
        int prefix_len=prefix.size();
        for(int i =1;i<strs.size();i++){
         string s=strs[i];
